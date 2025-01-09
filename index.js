@@ -13,6 +13,7 @@ const darkColorsArr = [
   
   function getRandomIndex() {
     const randomIndex = Math.floor(darkColorsArr.length * Math.random());
+    // console.log(Math.random())
     return randomIndex;
   }
   
@@ -21,6 +22,7 @@ const darkColorsArr = [
   
   function changeBackgroundColor() {
     const color = darkColorsArr[getRandomIndex()];
+    // console.log(color)
   
     bgHexCodeSpanElement.innerText = color;
     body.style.backgroundColor = color;
